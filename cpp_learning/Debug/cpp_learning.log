@@ -1,0 +1,4 @@
+﻿  定义变量的地址高低位问题.cpp
+D:\A_DeskTop_Design\C-C++\cpp_learning\定义变量的地址高低位问题.cpp(6,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+D:\A_DeskTop_Design\C-C++\cpp_learning\定义变量的地址高低位问题.cpp(6,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“int *”
+  cpp_learning.vcxproj -> D:\A_DeskTop_Design\C-C++\cpp_learning\Debug\cpp_learning.exe
