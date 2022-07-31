@@ -1,3 +1,4 @@
-﻿  SqList_Sequential.c
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Sequential.c(33): warning C4716: “InitList”: 必须返回一个值
+﻿  test.c
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\test.c(12,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\test.c(15,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
   DataStructureCode.vcxproj -> D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Debug\DataStructureCode.exe
