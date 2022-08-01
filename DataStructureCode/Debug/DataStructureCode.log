@@ -1,4 +1,17 @@
-﻿  test.c
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\test.c(12,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\test.c(15,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“int *”
+﻿  SqList_Link.c
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(25,13): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(29,14): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(48,14): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(55,22): warning C4013: “malloc”未定义；假设外部返回 int
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(57,13): warning C4133: “=”: 从“LinkList”到“Node *”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(70,14): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(77,13): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(80,6): warning C4013: “free”未定义；假设外部返回 int
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(89,7): warning C4013: “srand”未定义；假设外部返回 int
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(96,17): warning C4133: “=”: 从“LinkList”到“Node *”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(112,14): warning C4133: “=”: 从“LinkList”到“Node *”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(122,16): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(126,14): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(137,13): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(145,14): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
   DataStructureCode.vcxproj -> D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Debug\DataStructureCode.exe
