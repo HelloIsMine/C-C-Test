@@ -1,17 +1,6 @@
-﻿  SqList_Link.c
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(25,13): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(29,14): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(48,14): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(55,22): warning C4013: “malloc”未定义；假设外部返回 int
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(57,13): warning C4133: “=”: 从“LinkList”到“Node *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(70,14): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(77,13): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(80,6): warning C4013: “free”未定义；假设外部返回 int
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(89,7): warning C4013: “srand”未定义；假设外部返回 int
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(96,17): warning C4133: “=”: 从“LinkList”到“Node *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(112,14): warning C4133: “=”: 从“LinkList”到“Node *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(122,16): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(126,14): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(137,13): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\SqList_Link.c(145,14): warning C4133: “=”: 从“Node *”到“LinkList”的类型不兼容
+﻿  StaticLinkList.c
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\StaticLinkList.c(53): warning C4716: “Malloc_SLL”: 必须返回一个值
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\StaticLinkList.c(59): warning C4716: “ListInsert”: 必须返回一个值
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\StaticLinkList.c(65): warning C4716: “ListDelete”: 必须返回一个值
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\StaticLinkList.c(76): warning C4716: “ListLength”: 必须返回一个值
   DataStructureCode.vcxproj -> D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Debug\DataStructureCode.exe
