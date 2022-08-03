@@ -1,6 +1,6 @@
 ﻿  StaticLinkList.c
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\StaticLinkList.c(53): warning C4716: “Malloc_SLL”: 必须返回一个值
 D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\StaticLinkList.c(59): warning C4716: “ListInsert”: 必须返回一个值
 D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\StaticLinkList.c(65): warning C4716: “ListDelete”: 必须返回一个值
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\StaticLinkList.c(53): warning C4716: “Malloc_SLL”: 必须返回一个值
 D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\StaticLinkList.c(76): warning C4716: “ListLength”: 必须返回一个值
   DataStructureCode.vcxproj -> D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Debug\DataStructureCode.exe

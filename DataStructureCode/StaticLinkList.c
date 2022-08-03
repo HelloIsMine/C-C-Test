@@ -19,15 +19,9 @@ typedef struct
 //Initialize a static linklist;
 status InitList(StaticLinkList space)
 {
-	space[0].data = 0;
 	for (int i = 0; i < MAXSIZE - 1; i++)
 	{
 		space[i].cur = i + 1;
-		if (i != 0)
-		{
-			space[i].data = i;
-			space[0].data++;
-		}
 	}
 	space[MAXSIZE - 1].cur = 0;
 	return OK;
@@ -36,26 +30,36 @@ status InitList(StaticLinkList space)
 //打印静态链表
 void PrintList(StaticLinkList L)
 {
-	int i = L[0].cur;
-	int j = 1;
-	while (i && j <= L[0].data)
-	{
-		printf("第%d个元素是：%d\n", j, L[i].data);
-		j++;
-		i = L[i].cur;
-	}
+	
 }
 
 //分配mallc函数
 int Malloc_SLL(StaticLinkList space)
 {
-
+	int i = space[0].cur;
+	if (i)
+		space[0].cur = space[i].cur;
+	return i;
 }
 
 //插入元素到静态链表
 status ListInsert(StaticLinkList L, int i, ElemType e)
 {
-
+	if (i < 1)return ERORR;
+	int j = Malloc_SLL(L);
+	if (j)
+	{
+		L[j].data = e;
+		int k = MAXSIZE - 1;
+		for (int l = 1; l < i - 1; l++)
+		{
+			k = L[k].cur;
+		}
+		L[j].cur = L[k].cur;
+		L[k].cur = j;
+		return OK;
+	}
+	return ERORR;
 }
 
 //删除元素
