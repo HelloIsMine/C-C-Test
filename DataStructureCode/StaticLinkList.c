@@ -78,6 +78,13 @@ int ListLength(StaticLinkList L)
 	return L[0].data;
 }
 
+//释放节点
+void Free_SLL(StaticLinkList space, int k)
+{
+	space[k].cur = space[0].cur;
+	space[0].cur = k;
+}
+
 //删除元素
 status ListDelete(StaticLinkList L, int i)
 {
@@ -95,12 +102,6 @@ status ListDelete(StaticLinkList L, int i)
 	return OK;
 }
 
-//释放节点
-void Free_SLL(StaticLinkList space, int k)
-{
-	space[k].cur = space[0].cur;
-	space[0].cur = k;
-}
 
 int main()
 {
@@ -108,6 +109,25 @@ int main()
 	InitList(L);
 	PrintList(L);
 
+	//插入元素
+	ListInsert(L, 1, 100);
+	ListInsert(L, 2, 200);
+	ListInsert(L, 3, 300);
+	ListInsert(L, 4, 400);
+	ListInsert(L, 5, 500);
+	ListInsert(L, 6, 600);
+	ListInsert(L, 7, 700);
+	ListInsert(L, 8, 800);
+	ListInsert(L, 9, 900);
+	ListInsert(L, 10, 1000);
+	ListInsert(L, 11, 1100);
 
+	PrintList(L);
+	printf("长度是%d\n", ListLength(L));
+
+	//删除元素
+	ListDelete(L, 5);
+	PrintList(L);
+	printf("长度是%d\n", ListLength(L));
 	return 0;
 }
