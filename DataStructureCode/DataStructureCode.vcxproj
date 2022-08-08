@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClCompile Include="SqList_Link.c" />
     <ClCompile Include="SqList_Sequential.c" />
+    <ClCompile Include="Stack.c" />
     <ClCompile Include="StaticLinkList.c" />
     <ClCompile Include="test.c" />
   </ItemGroup>
