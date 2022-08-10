@@ -1,3 +1,2 @@
-﻿  StaticLinkList.c
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\StaticLinkList.c(57,29): warning C4013: “ListLength”未定义；假设外部返回 int
+﻿  Stack.c
   DataStructureCode.vcxproj -> D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Debug\DataStructureCode.exe
