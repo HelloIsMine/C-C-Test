@@ -4,7 +4,7 @@
 #define ERORR 0
 #define TRUE 1
 #define FLASE 0
-typedef int Elemtype;
+typedef char Elemtype;
 typedef int status;
 typedef struct {
 	Elemtype data[MAXSIZE];
@@ -47,12 +47,65 @@ void PrintSqStack(SqStack* s)
 
 /*Application: 四则运算表达式*/
 //中缀表达式转后缀表达式
+char* transferSpress(char* s) {
+	int i = 0;
+	char outPut[30];
+	int j = 0;
+	SqStack S;
+	InitSqStack(&S);
+	Elemtype e;
+	while (*s != '\0') {
+		if (*s == 32) {
+			outPut[j++] = ' ';
+			s++;
+			continue;
+		}
+		if (*s >= 48 && *s <= 57) {
+			outPut[j++] = *s++;
+			outPut[j++] = ' ';
+			continue;
+		}
+		if (s[i] == '(') {
+			Push(&S, *s++);
+		}
+		else if (*s == '+' || *s == '-') {
+			if (S.top >-1 && S.data[S.top] == '*' || S.data[S.top] == '/') {
+				while (S.top > -1)
+				{
+					Pop(&S, &outPut[j++]);
+					outPut[j++] = ' ';
+				}
+			}
+			Push(&S, *s++);			
+		}
+		else if (*s == ')') {
+			while (S.data[S.top] != '(')
+			{
+				Pop(&S, &outPut[j++]);
+				outPut[j++] = ' ';
+			}
+			Pop(&S, &e);
+			s++;
+		}
+		else if (*s == '*' || *s == '/') {
+			Push(&S, *s++);
+		}
+	}
+	while (S.top > -1)
+	{
+		Pop(&S, &outPut[j++]);
+		outPut[j++] = ' ';
+	}
+	outPut[j] = '\0';
+	return outPut;
+}
+
 //后缀表达式的运算
 
 
 
 int main() {
-	SqStack s;
+	/*SqStack s;
 	Elemtype e;
 	InitSqStack(&s);
 	PrintSqStack(&s);
@@ -65,5 +118,9 @@ int main() {
 	Pop(&s, &e);
 	printf("deleted elem is %d\n", e);
 	PrintSqStack(&s);
+	printf("this is %dwhat\n", '9');*/
+	char s[] = "5+2*(2-6)+3";
+	printf("It is %s\n", s);
+	printf("It is %s\n", transferSpress(s));
 	return 0;
 }
