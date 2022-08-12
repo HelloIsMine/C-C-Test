@@ -49,59 +49,104 @@ void PrintSqStack(SqStack* s)
 //中缀表达式转后缀表达式
 char* transferSpress(char* s) {
 	int i = 0;
-	char outPut[30];
+	char outPut[100];
 	int j = 0;
 	SqStack S;
 	InitSqStack(&S);
-	Elemtype e;
+	char e;
 	while (*s != '\0') {
-		if (*s == 32) {
-			outPut[j++] = ' ';
-			s++;
-			continue;
-		}
 		if (*s >= 48 && *s <= 57) {
 			outPut[j++] = *s++;
-			outPut[j++] = ' ';
 			continue;
 		}
+		outPut[j] = ' ';
 		if (s[i] == '(') {
 			Push(&S, *s++);
 		}
 		else if (*s == '+' || *s == '-') {
 			if (S.top >-1 && S.data[S.top] == '*' || S.data[S.top] == '/') {
-				while (S.top > -1)
+				while (S.top > -1 && S.data[S.top] != '(')
 				{
-					Pop(&S, &outPut[j++]);
-					outPut[j++] = ' ';
+					Pop(&S, &outPut[++j]);
+					outPut[++j] = ' ';
 				}
 			}
-			Push(&S, *s++);			
+			j++;
+			Push(&S, *s++);	
 		}
 		else if (*s == ')') {
 			while (S.data[S.top] != '(')
 			{
-				Pop(&S, &outPut[j++]);
-				outPut[j++] = ' ';
+				Pop(&S, &outPut[++j]);
+				outPut[++j] = ' ';
 			}
 			Pop(&S, &e);
 			s++;
 		}
 		else if (*s == '*' || *s == '/') {
 			Push(&S, *s++);
+			outPut[++j] = ' ';
 		}
 	}
 	while (S.top > -1)
 	{
-		Pop(&S, &outPut[j++]);
 		outPut[j++] = ' ';
+		Pop(&S, &outPut[j++]);
 	}
 	outPut[j] = '\0';
 	return outPut;
 }
 
 //后缀表达式的运算
-
+double* CalculateSpress(char* s) {
+	SqStack S;
+	InitSqStack(&S);
+	int m, n;
+	double total;
+	while (*s != '\0') {
+		if (*s >= 48 && *s <= 57) {
+			Push(&S, *s++);
+		}
+		else if (*s == '*') {
+			Pop(&S, &m);
+			Pop(&S, &n);
+			if (S.top == -1) {
+				return m * n;
+			}
+			  total = m * n;
+			Push(&S, total);
+		}
+		else if (*s == '+') {
+			Pop(&S, &m);
+			Pop(&S, &n);
+			if (S.top == -1) {
+				return m + n;
+			}
+			total = m + n;
+			Push(&S, total);
+		}
+		else if (*s == '-') {
+			Pop(&S, &m);
+			Pop(&S, &n);
+			if (S.top == -1) {
+				return n-m;
+			}
+			total = n-m;
+			Push(&S, total);
+		}
+		else if (*s == '/') {
+			Pop(&S, &m);
+			Pop(&S, &n);
+			if (S.top == -1) {
+				return n/m;
+			}
+			total = n/m;
+			Push(&S, total);
+		}
+		s++;
+	}
+	return;
+}
 
 
 int main() {
@@ -119,8 +164,10 @@ int main() {
 	printf("deleted elem is %d\n", e);
 	PrintSqStack(&s);
 	printf("this is %dwhat\n", '9');*/
-	char s[] = "5+2*(2-6)+3";
+	char s[] = "9+3/(2*3+4)";
 	printf("It is %s\n", s);
 	printf("It is %s\n", transferSpress(s));
+
+	//printf("sum is %d\n", CalculateSpress(s));
 	return 0;
 }
