@@ -27,7 +27,10 @@
     <ClCompile Include="StaticLinkList.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Stack.c">
+    <ClCompile Include="SqStack.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkStack.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

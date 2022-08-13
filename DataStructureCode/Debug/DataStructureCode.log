@@ -1,21 +1,8 @@
-﻿  Stack.c
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(111,14): warning C4133: “函数”: 从“int *”到“Elemtype *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(112,14): warning C4133: “函数”: 从“int *”到“Elemtype *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(114,17): warning C4047: “return”:“double *”与“int”的间接级别不同
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(117,18): warning C4244: “函数”: 从“double”转换到“Elemtype”，可能丢失数据
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(120,14): warning C4133: “函数”: 从“int *”到“Elemtype *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(121,14): warning C4133: “函数”: 从“int *”到“Elemtype *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(123,17): warning C4047: “return”:“double *”与“int”的间接级别不同
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(126,18): warning C4244: “函数”: 从“double”转换到“Elemtype”，可能丢失数据
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(129,14): warning C4133: “函数”: 从“int *”到“Elemtype *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(130,14): warning C4133: “函数”: 从“int *”到“Elemtype *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(132,15): warning C4047: “return”:“double *”与“int”的间接级别不同
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(135,18): warning C4244: “函数”: 从“double”转换到“Elemtype”，可能丢失数据
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(138,14): warning C4133: “函数”: 从“int *”到“Elemtype *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(139,14): warning C4133: “函数”: 从“int *”到“Elemtype *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(141,15): warning C4047: “return”:“double *”与“int”的间接级别不同
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(144,18): warning C4244: “函数”: 从“double”转换到“Elemtype”，可能丢失数据
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(148,2): warning C4033: “CalculateSpress”必须返回值
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(149): warning C4715: “CalculateSpress”: 不是所有的控件路径都返回值
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Stack.c(97): warning C4172: 返回局部变量或临时变量的地址: outPut
+﻿  LinkStack.c
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(21,39): warning C4013: “malloc”未定义；假设外部返回 int
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(23,18): warning C4133: “=”: 从“LinkStackPtr”到“StackNode *”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(35,18): warning C4133: “=”: 从“StackNode *”到“LinkStackPtr”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(36,6): warning C4013: “free”未定义；假设外部返回 int
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(49,14): warning C4133: “=”: 从“StackNode *”到“LinkStackPtr”的类型不兼容
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(59,19): warning C4133: “=”: 从“StackNode *”到“LinkStackPtr”的类型不兼容
   DataStructureCode.vcxproj -> D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Debug\DataStructureCode.exe
