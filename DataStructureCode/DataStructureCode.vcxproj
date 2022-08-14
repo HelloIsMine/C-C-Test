@@ -139,9 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="LinkQueue.c" />
     <ClCompile Include="LinkStack.c" />
     <ClCompile Include="SqList_Link.c" />
     <ClCompile Include="SqList_Sequential.c" />
+    <ClCompile Include="SqQueue.cpp" />
     <ClCompile Include="SqStack.c" />
     <ClCompile Include="StaticLinkList.c" />
     <ClCompile Include="test.c" />

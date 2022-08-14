@@ -1,8 +1,5 @@
-﻿  LinkStack.c
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(21,39): warning C4013: “malloc”未定义；假设外部返回 int
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(23,18): warning C4133: “=”: 从“LinkStackPtr”到“StackNode *”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(35,18): warning C4133: “=”: 从“StackNode *”到“LinkStackPtr”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(36,6): warning C4013: “free”未定义；假设外部返回 int
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(49,14): warning C4133: “=”: 从“StackNode *”到“LinkStackPtr”的类型不兼容
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkStack.c(59,19): warning C4133: “=”: 从“StackNode *”到“LinkStackPtr”的类型不兼容
+﻿  LinkQueue.c
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkQueue.c(41,39): warning C4013: “malloc”未定义；假设外部返回 int
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkQueue.c(66,8): warning C4013: “free”未定义；假设外部返回 int
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkQueue.c(76): warning C4715: “DeQueue”: 不是所有的控件路径都返回值
   DataStructureCode.vcxproj -> D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Debug\DataStructureCode.exe

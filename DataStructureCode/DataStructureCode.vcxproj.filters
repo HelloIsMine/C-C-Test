@@ -33,5 +33,11 @@
     <ClCompile Include="LinkStack.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SqQueue.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkQueue.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
