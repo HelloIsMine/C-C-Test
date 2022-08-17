@@ -147,6 +147,7 @@
     <ClCompile Include="SqStack.c" />
     <ClCompile Include="StaticLinkList.c" />
     <ClCompile Include="test.c" />
+    <ClCompile Include="SqTree.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

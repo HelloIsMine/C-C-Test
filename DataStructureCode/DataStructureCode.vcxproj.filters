@@ -39,5 +39,8 @@
     <ClCompile Include="LinkQueue.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SqTree.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
