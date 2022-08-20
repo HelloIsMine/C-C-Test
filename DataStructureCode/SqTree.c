@@ -1,20 +1,20 @@
-#include<stdio.h>
-
-#define MAXSIZE 100
-#define OK 1
-#define ERORR 0
-#define TRUE 1
-#define FLASE 0
-typedef int Elemtype;
-typedef int Status;
-
-typedef struct PTNode {
-	Elemtype data;
-	int parent;
-}PTNode;
-//双亲表示法
-typedef struct {
-	PTNode node[MAXSIZE];
-	int r, n;
-}PTree;
-
+//#include<stdio.h>
+//
+//#define MAXSIZE 100
+//#define OK 1
+//#define ERORR 0
+//#define TRUE 1
+//#define FLASE 0
+//typedef int Elemtype;
+//typedef int Status;
+//
+//typedef struct PTNode {
+//	Elemtype data;
+//	int parent;
+//}PTNode;
+////双亲表示法
+//typedef struct {
+//	PTNode node[MAXSIZE];
+//	int r, n;
+//}PTree;
+//

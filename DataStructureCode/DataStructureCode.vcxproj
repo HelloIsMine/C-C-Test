@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BiTree.c" />
     <ClCompile Include="LinkQueue.c" />
     <ClCompile Include="LinkStack.c" />
     <ClCompile Include="SqList_Link.c" />

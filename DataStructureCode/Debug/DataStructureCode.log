@@ -1,5 +1,9 @@
-﻿  LinkQueue.c
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkQueue.c(41,39): warning C4013: “malloc”未定义；假设外部返回 int
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkQueue.c(66,8): warning C4013: “free”未定义；假设外部返回 int
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\LinkQueue.c(76): warning C4715: “DeQueue”: 不是所有的控件路径都返回值
+﻿  BiTree.c
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\BiTree.c(19,20): warning C4047: “=”:“Elemtype”与“void *”的间接级别不同
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\BiTree.c(28,20): warning C4047: “=”:“Elemtype”与“void *”的间接级别不同
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\BiTree.c(37,20): warning C4047: “=”:“Elemtype”与“void *”的间接级别不同
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\BiTree.c(51,22): warning C4013: “malloc”未定义；假设外部返回 int
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\BiTree.c(25): warning C4717: “PreOrderTraverse”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\BiTree.c(34): warning C4717: “InOrderTraverse”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\BiTree.c(42): warning C4717: “PostOrderTraverse”: 如递归所有控件路径，函数将导致运行时堆栈溢出
   DataStructureCode.vcxproj -> D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Debug\DataStructureCode.exe
