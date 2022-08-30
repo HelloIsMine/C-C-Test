@@ -48,5 +48,11 @@
     <ClCompile Include="ThreadedBiTree.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="树与二叉树的转换.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="graph.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

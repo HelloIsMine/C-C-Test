@@ -1,3 +1,4 @@
-﻿  ThreadedBiTree.c
-D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\ThreadedBiTree.c(49,28): warning C4013: “malloc”未定义；假设外部返回 int
+﻿  graph.c
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\graph.c(169,8): warning C4477: “scanf”: 格式字符串“%c”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\graph.c(180,24): warning C4013: “malloc”未定义；假设外部返回 int
   DataStructureCode.vcxproj -> D:\A_DeskTop_Design\C&CPP-Test\DataStructureCode\Debug\DataStructureCode.exe
