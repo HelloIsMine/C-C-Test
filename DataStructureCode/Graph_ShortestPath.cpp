@@ -46,5 +46,8 @@ int main()
 {
 	MGraph G;
 	CreateGraph(&G);
+	PathMatrix p;
+	ShortPathTable D;
+	ShortestPath_Dijkstra(G, 0, &p, &D);
 	return 0;
 }
