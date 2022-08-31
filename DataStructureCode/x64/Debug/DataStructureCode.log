@@ -1,0 +1,42 @@
+﻿生成启动时间为 2022/8/31 14:17:40。
+     1>项目“F:\WeyJohn\C-CPP-Test\DataStructureCode\DataStructureCode.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_DEPRECATE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TC /errorReport:prompt BiTree.c LinkQueue.c LinkStack.c SqList_Link.c SqList_Sequential.c SqStack.c StaticLinkList.c test.c SqTree.c ThreadedBiTree.c "树与二叉树的转换.c"
+         树与二叉树的转换.c
+         ThreadedBiTree.c
+         SqTree.c
+         test.c
+         StaticLinkList.c
+         SqStack.c
+         SqList_Sequential.c
+         SqList_Link.c
+         LinkStack.c
+         LinkQueue.c
+         BiTree.c
+         正在生成代码...
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /D _CRT_SECURE_NO_DEPRECATE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt Graph_ShortestPath.cpp SqQueue.cpp
+         SqQueue.cpp
+         Graph_ShortestPath.cpp
+     1>f:\weyjohn\c-cpp-test\datastructurecode\Graph.h(5): warning C4005: “INFINITY”: 宏重定义
+                 C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\include\math.h(102) : 参见“INFINITY”的前一个定义
+         正在生成代码...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\WeyJohn\C-CPP-Test\DataStructureCode\x64\Debug\DataStructureCode.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\WeyJohn\C-CPP-Test\DataStructureCode\x64\Debug\DataStructureCode.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\WeyJohn\C-CPP-Test\DataStructureCode\x64\Debug\DataStructureCode.lib" /MACHINE:X64 x64\Debug\BiTree.obj
+         x64\Debug\Graph_ShortestPath.obj
+         x64\Debug\LinkQueue.obj
+         x64\Debug\LinkStack.obj
+         x64\Debug\SqList_Link.obj
+         x64\Debug\SqList_Sequential.obj
+         x64\Debug\SqQueue.obj
+         x64\Debug\SqStack.obj
+         x64\Debug\StaticLinkList.obj
+         x64\Debug\test.obj
+         x64\Debug\SqTree.obj
+         x64\Debug\ThreadedBiTree.obj
+         "x64\Debug\树与二叉树的转换.obj"
+         DataStructureCode.vcxproj -> F:\WeyJohn\C-CPP-Test\DataStructureCode\x64\Debug\DataStructureCode.exe
+     1>已完成生成项目“F:\WeyJohn\C-CPP-Test\DataStructureCode\DataStructureCode.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.58

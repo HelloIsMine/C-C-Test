@@ -1,8 +1,7 @@
 #include<iostream>
+#include"Graph.h"
+#include<vector>
 using namespace std;
-
-#define MAXVEX 9
-#define INFINITY 65535
 
 typedef int PathMatrix[MAXVEX];		  /*用于存储最短路径下的数组*/
 typedef int ShortPathTable[MAXVEX];								/*用于存储到各点的最短路径的权值和*/
@@ -14,7 +13,7 @@ void ShortestPath_Dijkstra(MGraph G, int v0, PathMatrix* p, ShortPathTable* D)
 	for (v = 0; v < G.numVertexes; v++)
 	{
 		final[v] = 0;							  /*全部路径初始化为未知最短路径状态*/
-		(*D)[v] = G.matrix[v0][v];													/*将与v0点有连线的顶点加上权值*/
+		(*D)[v] = G.arc[v0][v];													/*将与v0点有连线的顶点加上权值*/
 		(*p)[v] = 0;						/*初始化路径数组p为0*/
 	}
 	(*D)[v0] = 0;
@@ -34,9 +33,9 @@ void ShortestPath_Dijkstra(MGraph G, int v0, PathMatrix* p, ShortPathTable* D)
 		final[k] = 1;
 		for (w = 0; w < G.numVertexes; w++)
 		{
-			if (!final[w] && (min + G.matrix[k][w] < (*D)[w]))
+			if (!final[w] && (min + G.arc[k][w] < (*D)[w]))
 			{
-				(*D)[w] = min + G.matrix[k][w];
+				(*D)[w] = min + G.arc[k][w];
 				(*p)[w] = k;
 			}
 		}
@@ -45,5 +44,7 @@ void ShortestPath_Dijkstra(MGraph G, int v0, PathMatrix* p, ShortPathTable* D)
 
 int main()
 {
+	MGraph G;
+	CreateGraph(&G);
 	return 0;
 }

@@ -42,7 +42,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v120</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -114,7 +114,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_DEPRECATE</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
     <Link>
@@ -140,11 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="BiTree.c" />
-<<<<<<< HEAD
-    <ClCompile Include="graph.c" />
-=======
     <ClCompile Include="Graph_ShortestPath.cpp" />
->>>>>>> 3453c824bcd265bd469002b0759a5d13deb48638
     <ClCompile Include="LinkQueue.c" />
     <ClCompile Include="LinkStack.c" />
     <ClCompile Include="SqList_Link.c" />
@@ -156,6 +152,9 @@
     <ClCompile Include="SqTree.c" />
     <ClCompile Include="ThreadedBiTree.c" />
     <ClCompile Include="树与二叉树的转换.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graph.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -28,11 +28,7 @@
 //			T->LTag = Thread;
 //			T->lchild = pre;
 //		}
-<<<<<<< HEAD
-//		if (pre && !pre->rchild) 
-=======
-//		if (!pre->rchild) 
->>>>>>> 3453c824bcd265bd469002b0759a5d13deb48638
+//		if (pre && !pre->rchild)
 //		{
 //			pre->RTag = Thread;
 //			pre->rchild = T;
@@ -51,22 +47,16 @@
 //	else
 //	{
 //		*T = (BiThreadTree)malloc(sizeof(BiThreadNode));
-<<<<<<< HEAD
 //		(*T)->LTag = link;
 //		(*T)->RTag = link;
-=======
->>>>>>> 3453c824bcd265bd469002b0759a5d13deb48638
 //		(*T)->data = ch;
 //		CreateBiTree(&(*T)->lchild);
 //		CreateBiTree(&(*T)->rchild);
 //	}
 //}
 //
-<<<<<<< HEAD
-////ÖÐÐòÏßË÷»¯
-=======
+////ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //
->>>>>>> 3453c824bcd265bd469002b0759a5d13deb48638
 //Status InOrderTraverse_Thr(BiThreadTree T)
 //{
 //	BiThreadTree p;
@@ -87,11 +77,10 @@
 //
 //		p = p->rchild;
 //	}
-<<<<<<< HEAD
 //	return OK;
 //}
 //
-////Ç°ÐòÏßË÷»¯
+////Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //Status PreOrderTraverse_Thr(BiThreadTree T)
 //{
 //	return OK;
@@ -109,7 +98,6 @@
 //	pre->RTag = Thread;
 //	pre->rchild = p;
 //	InOrderTraverse_Thr(p);
-=======
 //}
 //
 //int main() {
@@ -122,6 +110,5 @@
 //	inThreading(T);
 //
 //
->>>>>>> 3453c824bcd265bd469002b0759a5d13deb48638
 //	return 0;
 //}
