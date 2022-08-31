@@ -54,6 +54,9 @@
     <ClCompile Include="Graph_ShortestPath.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="TopologySorting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graph.h">

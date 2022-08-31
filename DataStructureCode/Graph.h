@@ -151,6 +151,7 @@ typedef struct EdgeNode
 
 typedef struct VertexNode
 {
+	int in;
 	VertexType data;
 	EdgeNode* firstedge;
 }VertexNode, AdjList[MAXVEX];
@@ -159,9 +160,9 @@ typedef struct
 {
 	AdjList adjList;
 	int numVertexes, numEdges;
-}GraphAdjList;
+}graphAdjList, * GraphAdjList;
 
-void CreateALGraph(GraphAdjList* G)
+void CreateALGraph(graphAdjList* G)
 {
 	int i, j, k;
 	EdgeNode* e;
@@ -191,7 +192,7 @@ void CreateALGraph(GraphAdjList* G)
 
 }
 
-void DFSL(GraphAdjList G, int i)
+void DFSL(graphAdjList G, int i)
 {
 	EdgeNode* p;
 	visited[i] = 1;
@@ -205,7 +206,7 @@ void DFSL(GraphAdjList G, int i)
 	}
 }
 
-void DFSLTraverse(GraphAdjList G)
+void DFSLTraverse(graphAdjList G)
 {
 	int i;
 	for (i = 0; i < G.numVertexes; i++)
@@ -217,7 +218,7 @@ void DFSLTraverse(GraphAdjList G)
 	}
 }
 
-void BFSLTraverse(GraphAdjList G)
+void BFSLTraverse(graphAdjList G)
 {
 	int i;
 	EdgeNode* p;
