@@ -173,3 +173,103 @@ void LeftBalance(BiTree* T)
 			break;
 	}
 }
+
+void RightBalance(BiTree* T)
+{
+	BiTree R, Rl;
+	R = (*T)->rchild;
+	switch (R->bf)
+	{
+	case RH:
+		(*T)->bf = R->bf = EH;
+		L_Rotate(T);
+		break;
+	case LH:
+		Rl = R->lchild;
+		switch (Rl->bf)
+		{
+		case RH:
+			(*T)->bf = LH;
+			R->bf = EH;
+			break;
+		case EH:
+			(*T)->bf = R->bf = EH;
+			break;
+		case LH:
+			(*T)->bf = EH;
+			R->bf = RH;
+			break;
+		}
+		Rl->bf = EH;
+		R_Rotate(&(*T)->rchild);
+		L_Rotate(T);
+		break;
+	}
+}
+
+int InsertAVL(BiTree* T, int e, int* taller)
+{
+	if (!*T)
+	{
+		*T = (BiTree)malloc(sizeof(BiTNode));
+		(*T)->data = e;
+		(*T)->lchild = (*T)->rchild = NULL;
+		(*T)->bf = EH;
+		*taller = 1;
+	}
+	else
+	{
+		if (e == (*T)->data)
+		{
+			*taller = 0;
+			return 0;
+		}
+		if (e < (*T)->data)
+		{
+			if (!InsertAVL(&(*T)->lchild, e, taller))
+				return 0;
+			if (taller)
+			{
+				switch ((*T)->bf)
+				{
+				case LH:
+					LeftBalance(T);
+					*taller = 0;
+					break;
+				case EH:
+					(*T)->bf = LH;
+					*taller = 1;
+					break;
+				case RH:
+					(*T)->bf = EH;
+					*taller = 0;
+					break;
+				}
+			}
+		}
+		else
+		{
+			if (!InsertAVL(&(*T)->rchild, e, taller))
+				return 0;
+			if (*taller)
+			{
+				switch ((*T)->bf)
+				{
+				case LH:
+					(*T)->bf = EH;
+					*taller = 0;
+					break;
+				case EH:
+					(*T)->bf = RH;
+					*taller = 1;
+					break;
+				case RH:
+					RightBalance(T);
+					*taller = 0;
+					break;
+				}
+			}
+		}
+	}
+	return 1;
+}
