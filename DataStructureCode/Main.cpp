@@ -26,13 +26,16 @@ int main()
 	/*
 	Æ½ºâ¶þ²æÊ÷
 	*/
-	int i;
+	/*int i;
 	int a[10] = { 3, 2, 1, 4, 5, 6, 7, 10, 9, 8 };
 	BiTree T = NULL;
 	int taller;
 	for (i = 0; i < 10; i++)
 	{
 		InsertAVL(&T, a[i], &taller);
-	}
+	}*/
+
+	
+
 	return 0;
 }
