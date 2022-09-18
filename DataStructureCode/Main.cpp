@@ -1,5 +1,6 @@
 #include"Search.h"
 #include"BinarySortTree.h"
+#include"Sort.h"
 using namespace std;
 
 int main()
@@ -35,7 +36,19 @@ int main()
 		InsertAVL(&T, a[i], &taller);
 	}*/
 
-	
+
+	/*
+	ÅÅÐò
+	*/
+	SqL L;
+	for (int i = 10; i > 0; i--) {
+		L.data[10 - i] = i;
+	}
+	L.length = 10;
+
+	PrintList(L);
+	InsertSort(&L);
+	PrintList(L);
 
 	return 0;
 }

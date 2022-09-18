@@ -57,6 +57,8 @@ int InsertBST(BiTree* T, int key)
 	}
 }
 
+int Delete(BiTree* p);
+
 int DeleteBST(BiTree* T, int key)
 {
 	if (!*T)

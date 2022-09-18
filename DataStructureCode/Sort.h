@@ -7,6 +7,12 @@ struct SqL
 	int length;
 };
 
+void PrintList(SqL L) {
+	for (int i = 0; i < L.length;i++) {
+		cout << "L[" << i << "]" << "==" << L.data[i] << endl;
+	}
+}
+
 void Swap(SqL* L, int i, int j) {
 	int temp = L->data[i];
 	L->data[i] = L->data[j];
@@ -49,19 +55,21 @@ void SelectSort(SqL* L) {
 
 /*
 插入排序
+
+最好的时间复杂度：比较n-1次temp < L->data[j-1]；
+最坏的时间复杂度：倒序,如{6,5,4,3,2,1},比较2,3,4,5,6,即2~n，所以时间复杂度为（n+4)(n-1)/2
+
 */
 
 void InsertSort(SqL* L) {
 	for (int i = 1; i < L->length; i++) {
-		if (L->data[i] < L->data[i - 1]) {
-			int temp = L->data[i];
-			int j = i;
-			while (j > 0 && temp < L->data[j-1])
-			{
-				L->data[j] = L->data[j - 1];
-				j--;
-			}
-			L->data[j] = temp;
+		int temp = L->data[i];
+		int j = i;
+		while (j > 0 && temp < L->data[j-1])
+		{
+			L->data[j] = L->data[j - 1];
+			j--;
 		}
+		L->data[j] = temp;
 	}
 }
