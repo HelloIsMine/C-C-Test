@@ -46,9 +46,13 @@ int main()
 	}
 	L.length = 10;
 
+	//≤Â»Î≈≈–Ú
 	PrintList(L);
-	InsertSort(&L);
+	//InsertSort(&L);
+	ShellSort(&L);
 	PrintList(L);
+
+
 
 	return 0;
 }

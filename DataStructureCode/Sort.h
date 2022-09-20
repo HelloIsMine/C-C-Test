@@ -73,3 +73,25 @@ void InsertSort(SqL* L) {
 		L->data[j] = temp;
 	}
 }
+
+/*
+Ï£¶ûÅÅÐò
+*/
+void ShellSort(SqL* L) {
+	int i, j;
+	int increment = L->length;
+	do {
+		increment = increment / 3 + 1;
+		for (i = increment + 1; i <= L->length; i++) {
+			j = i - increment;
+			if (L->data[j] > L->data[i]) {
+				L->data[0] = L->data[i];
+				for (;j > 0 && L->data[0] < L->data[j];j -= increment) {
+					L->data[j + increment] = L->data[j];
+				}
+				L->data[j + increment] = L->data[0];
+			}
+		}
+	}
+	while (increment > 1);
+}
